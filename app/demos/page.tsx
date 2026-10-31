@@ -1,0 +1,1 @@
+import type {Metadata} from "next";import {InfoPage} from "@/components/flata/Site";export const metadata:Metadata={title:"Industry demos",alternates:{canonical:"/portfolio/"}};export default function Page(){return <InfoPage page="portfolio"/>}

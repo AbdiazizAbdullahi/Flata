@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="exception-page"><a href="/" aria-label="Flata Software home"><img src="/assets/flata-wordmark.svg" width="150" height="36" alt="Flata"/></a><p>404</p><h1>A different direction.</h1><p>This page is not here. Find your way back to the website.</p><a href="/">Back to Flata ↗</a></main>}
