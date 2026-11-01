@@ -3,7 +3,7 @@ import "./globals.css";
 import "@/components/flata/demos.css";
 export const dynamic="force-static";
 export const metadata:Metadata={
- metadataBase:new URL("https://flata-business.flata.chatgpt.site"),
+ metadataBase:new URL("https://flata.site"),
  title:{default:"Flata Software | Websites & ongoing care",template:"%s | Flata Software"},
  description:"Thoughtful websites and ongoing care for independent businesses. Based in Kenya, working internationally.",
  robots:{index:false,follow:false},authors:[{name:"Flata Software"}],

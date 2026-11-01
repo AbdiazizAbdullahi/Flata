@@ -15,7 +15,7 @@ export const siteConfig = {
   name: "Flata",
   tagline: "Good websites. Ongoing partnership.",
   description: "Website design, development and ongoing care for independent businesses. Based in Kenya, working internationally.",
-  expectedUrl: "https://flata-business.flata.chatgpt.site",
+  expectedUrl: "https://flata.site",
   serviceArea: "Nairobi and nearby areas, with other locations quoted separately",
   contact: {
     whatsapp: "254700000000",

@@ -5,7 +5,7 @@ import { demoIndustries } from './Demos';
 
 export const email = 'flatasoftware@gmail.com';
 export const enquiry = 'mailto:' + email + '?subject=' + encodeURIComponent('A website for my business') + '&body=' + encodeURIComponent("Hello Flata's team,\n\nBusiness name:\nLocation:\nWhat we do:\nWhat visitors should be able to do:\nExisting website or social page:\nStyle, priorities and timing:\n");
-export const siteOrigin = 'https://flata-business.flata.chatgpt.site';
+export const siteOrigin = 'https://flata.site';
 
 const stages = [
   { title: 'Understand', line: 'Start with the right questions.', body: 'Your services, your customers and the action your website should make easier.', image: 'workshop-plate.webp' },
@@ -77,7 +77,7 @@ export function Gallery({ full = false }: { full?: boolean }) {
     <div className="collection-heading"><h2 id="collection-title">Different businesses.<br />Distinct experiences.</h2><p>Five industry experiences, each with a different customer journey.</p></div>
     {full && <div className="gallery-filters" role="group" aria-label="Filter industry concepts"><button type="button" aria-pressed={filter === 'all'} onClick={() => setFilter('all')}>All concepts</button>{demoIndustries.map(i => <button type="button" key={i.slug} aria-pressed={filter === i.slug} onClick={() => setFilter(i.slug)}>{i.sector}</button>)}</div>}
     <div className={'portfolio-grid' + (filter !== 'all' ? ' filtered' : '')}>
-      {visible.map(i => <a className={'portfolio-item portfolio-' + i.slug} href={i.slug === 'catering' ? 'https://gather-and-grain.flata.chatgpt.site/' : i.slug === 'detailing' ? 'https://obsidian-auto-studio.flata.chatgpt.site/' : '/demos/' + i.slug} key={i.slug}>
+      {visible.map(i => <a className={'portfolio-item portfolio-' + i.slug} href={i.slug === 'catering' ? 'https://catering.flata.site/' : i.slug === 'detailing' ? 'https://detailing.flata.site/' : '/demos/' + i.slug} key={i.slug}>
         <div className="portfolio-photo"><img src={i.image} alt={i.sector + ' concept image, illustrative.'} width="1200" height="900" loading="lazy" /><span className="demo-arrow" aria-hidden="true">↗</span></div>
         <div className="portfolio-caption"><div><p>{i.sector}</p><h3>{i.brand}</h3></div><span>{['catering', 'detailing'].includes(i.slug) ? 'Visit website' : 'Explore demo'} <span aria-hidden="true">→</span></span></div><p className="portfolio-description">{i.description}</p>
       </a>)}

@@ -30,10 +30,10 @@ for(const file of files){
   if(/254700000000|hello@flata\.co\.ke|KSh 100,000|KSh 20,000|KES 25,000/.test(html))failures.push(label+': obsolete/placeholder offer');
   if(/funnel\.sqlite|tracker-template|seed-leads|ATTEMPT_ID/.test(html))failures.push(label+': private data reference');
   if(label.startsWith('demos/catering/')){
-    if(!html.includes('https://gather-and-grain.flata.chatgpt.site/'))failures.push(label+': standalone destination missing');
+    if(!html.includes('https://catering.flata.site/'))failures.push(label+': standalone destination missing');
     if(html.includes('concept-planner-form'))failures.push(label+': embedded catering planner remains');
   } else if(label.startsWith('demos/detailing/')){
-    if(!html.includes('https://obsidian-auto-studio.flata.chatgpt.site/'))failures.push(label+': standalone destination missing');
+    if(!html.includes('https://detailing.flata.site/'))failures.push(label+': standalone destination missing');
     if(html.includes('concept-planner-form'))failures.push(label+': embedded detailing planner remains');
   } else if(label.startsWith('demos/')&&label!=='demos/index.html'){
     if(!html.includes('fictional concept by Flata Software')||!html.includes('nothing is sent, stored, booked or paid'))failures.push(label+': simulation disclosure');

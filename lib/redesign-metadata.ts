@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-export const siteOrigin="https://flata-business.flata.chatgpt.site";
+export const siteOrigin="https://flata.site";
 export const demoData=[
  {slug:"cleaning",brand:"Still & Shine",sector:"Cleaning"},
  {slug:"trades",brand:"Copperline Home",sector:"Home services"},
